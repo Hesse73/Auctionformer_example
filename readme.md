@@ -2,7 +2,7 @@
 
 ## Fetch trained model
 
-The Auctionformer model's checkpoint is saved on an ![anonymous google drive](https://drive.google.com/file/d/1JBOHIdjlhM9EpoIfwyF6NLveHSUQ3K7B/view?usp=drive_link), please download it and save it in `./model_ckpt/` before you run the model.
+The Auctionformer model's checkpoint is saved on an [anonymous google drive](https://drive.google.com/file/d/1JBOHIdjlhM9EpoIfwyF6NLveHSUQ3K7B/view?usp=drive_link), please download it and save it in `./model_ckpt/` before you run the model.
 The MLPNet model's checkpoint file is already provided in `./model_ckpt/`
 
 ## Example Settings
