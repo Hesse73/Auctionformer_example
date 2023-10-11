@@ -1,12 +1,9 @@
 # Run Examples
 
-## Clone the codes
+## Fetch trained model
 
-This repository uses git-lfs to store the models' checkpoint, please use the following commands to fetch the models after you clone/download the repo:
-
-```shell
-git lfs fetch --all
-```
+The Auctionformer model's checkpoint is saved on an ![anonymous google drive](https://drive.google.com/file/d/1JBOHIdjlhM9EpoIfwyF6NLveHSUQ3K7B/view?usp=drive_link), please download it and save it in `./model_ckpt/` before you run the model.
+The MLPNet model's checkpoint file is already provided in `./model_ckpt/`
 
 ## Example Settings
 
