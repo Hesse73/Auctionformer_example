@@ -41,7 +41,11 @@ class HybridDataset(Dataset):
 
         dataset_name = get_dataset_name(self.max_player, self.upper_value, args.dataset_size, args.start_from_zero)
         self.dataset = json.load(open(os.path.join(data_dir, dataset_name), 'r'))
-
+        if args.combine_zero and not args.start_from_zero:
+                zero_name = get_dataset_name(self.max_player, self.upper_value, args.dataset_size, True)
+                zero_dataset = json.load(open(os.path.join(data_dir, zero_name),'r'))
+                for key in self.dataset:
+                        self.dataset[key] += zero_dataset[key]
         if self.is_test:
             self.dataset_size = self.test_size
         else:

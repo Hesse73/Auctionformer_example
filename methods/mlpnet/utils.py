@@ -82,8 +82,8 @@ def plot_strategy(strategy, dir_name, filename='bid_strategy.pdf', max_value=20)
 
     # sns.heatmap(strategy, annot=False, cmap="crest", cbar=True)
 
-    plt.ylabel('bid')
-    plt.xlabel('valuation')
+    # plt.ylabel('bid')
+    # plt.xlabel('valuation')
 
     plt.savefig(os.path.join(dir_name, filename), format="pdf", bbox_inches="tight")
     print('The result computed by MLPNet has been saved at:', os.path.join(dir_name, filename))

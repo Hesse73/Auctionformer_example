@@ -67,6 +67,6 @@ if __name__ == '__main__':
     np.random.seed(42)
 
     solve_player1_strategy(example_1, '../../bidding_results/mlpnet/', 'example1.pdf', model_dir='../../model_ckpt/')
-    solve_player1_strategy(example_2, '../../bidding_results/mlpnet/', 'example2.pdf', model_dir='../../model_ckpt/')
+    solve_player1_strategy(example_3, '../../bidding_results/mlpnet/', 'example3.pdf', model_dir='../../model_ckpt/')
     # # run this will throw exception
-    # solve_player1_strategy(example_3, '../../bidding_results/mlpnet/', 'example3.pdf', model_dir='../../model_ckpt/')
+    # solve_player1_strategy(example_2, '../../bidding_results/mlpnet/', 'example3.pdf', model_dir='../../model_ckpt/')

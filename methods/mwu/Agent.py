@@ -1,4 +1,4 @@
-from Algorithm import ContextualMWU
+from Algorithm import ContextualMWU, ContextualOMWU
 
 
 class BiddingAgent:
@@ -10,8 +10,12 @@ class BiddingAgent:
         self.mechanism = args.mechanism
         self.agt_id = agt_id
 
-        self.algorithm = ContextualMWU(self.valuation_range,self.bidding_range,self.overbid,args.lr,args.rho,
-                                       self.mechanism, args.exponential)
+        if args.algo == 'MWU':
+            self.algorithm = ContextualMWU(self.valuation_range,self.bidding_range,self.overbid,args.lr,args.rho,
+                                           self.mechanism, args.exponential)
+        else:
+            self.algorithm = ContextualOMWU(self.valuation_range, self.bidding_range, self.overbid, args.eta,
+                                            self.mechanism)
 
         self.last_action = None
         self.last_state = None

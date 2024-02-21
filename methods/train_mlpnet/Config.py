@@ -3,8 +3,9 @@ class Config:
     max_player = 3
     valuation_range = 21
     max_entry = 3
-    distributions = ['uniform']
-    start_from_zero = 1
+    combine_zero = True
+    distributions = ['uniform', 'gaussian']
+    start_from_zero = 0
     dataset_size = 8000
     test_size = 500
     train_enlarge = 10
